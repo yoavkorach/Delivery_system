@@ -69,6 +69,7 @@ func decreaser(delivery deliveryPerson) { // Function to decrease the distance o
 
 	// When order is delivered
 	fmt.Println("\nOrder delivered")
+	fmt.Println("\nPlease enter your request:\n 1. Place Order\n 2. Where is my Order\n 3. Exit")
 	delivery.currOrder = Order{}
 	availablePeople = append(availablePeople, delivery)
 	for index, person := range unavailablePeople { // Remove the delivery person from unavailable list
