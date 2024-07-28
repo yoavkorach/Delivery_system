@@ -119,7 +119,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	for { // Take request from user
 
-		fmt.Println("\nPlease enter your request:\n 1. Place Order\n 2. Where is my Order\n 3. Exit")
+		fmt.Println("\nPlease enter your request number:\n 1. Place Order\n 2. Where is my Order\n 3. Exit")
 		request, _ := reader.ReadString('\n')
 		request = strings.TrimSpace(request)
 		switch request {
